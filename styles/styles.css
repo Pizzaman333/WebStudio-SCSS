@@ -16,8 +16,8 @@
 }
 
 .header {
-  padding-top: 30px;
-  padding-bottom: 31px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-logo1 {
@@ -72,8 +72,7 @@ letter-spacing: 0.28px;
 
 .offer {
   background-color: var(--background-color);
-  padding-top: 213px;
-  padding-bottom: 200px;
+  padding: 200px 0;
 }
 
 .offer-title {
