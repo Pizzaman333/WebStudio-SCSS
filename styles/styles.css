@@ -306,6 +306,10 @@ cursor: pointer;
   border: 1px solid #EEE;
 }
 
+.projects-item {
+  flex-basis: calc((100% - 48px) \ 3);
+}
+
 .projects-description {
   color: var(--secondary-color);
   font-size: 16px;
