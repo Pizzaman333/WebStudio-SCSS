@@ -87,7 +87,6 @@ body {
   cursor: pointer;
 }
 
-
 .header-info {
   color: var(--secondary-color);
   font-size: 14px;
@@ -133,6 +132,58 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.features-item:first-child:before {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  content: "";
+  display: block;
+  background-image: url(../images/antenna.jpg);
+  background-repeat: no-repeat;
+  background-position: center;  
+  margin-bottom: 30px;
+}
+
+.features-item:nth-child(2):before {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  content: "";
+  display: block;
+  background-image: url(../images/clock.jpg);
+  background-repeat: no-repeat;
+  background-position: center;  
+  margin-bottom: 30px;
+}
+
+.features-item:nth-child(3):before {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  content: "";
+  display: block;
+  background-image: url(../images/diagram.jpg);
+  background-repeat: no-repeat;
+  background-position: center;  
+  margin-bottom: 30px;
+}
+
+.features-item:last-child:before {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  content: "";
+  display: block;
+  background-image: url(../images/astronaut.jpg);
+  background-repeat: no-repeat;
+  background-position: center;  
+  margin-bottom: 30px;
 }
 
 .features {
@@ -213,7 +264,8 @@ body {
 .team-item {
   background-color: var(--white-color);
   border-radius: 0px 0px 4px 4px;
-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .team-subtitle {
@@ -281,8 +333,9 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
 .filters-button:hover {
   background: var(--highlight-color);
   color: var(--white-color);
-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-cursor: pointer;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .projects {
@@ -291,12 +344,13 @@ cursor: pointer;
 
 .projects-wrap {
   padding: 20px 24px;
+  border: 1px solid #eee;
 }
 
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 30px;
 }
 
 .projects-subtitle {
@@ -307,13 +361,16 @@ cursor: pointer;
   letter-spacing: 1.08px;
   margin-bottom: 4px;
 }
-
-.projects-article {
-  border: 1px solid #EEE;
+.projects-img {
+  width: 370px;
+  height: 294px;
 }
 
+/* .projects-article {
+} */
+
 .projects-item {
-  flex-basis: calc((100% - 48px) \ 3);
+  flex-basis: calc((100% - 60px) \3);
 }
 
 .projects-description {
