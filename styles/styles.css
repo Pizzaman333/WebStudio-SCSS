@@ -141,7 +141,7 @@ body {
   background: #f5f4fa;
   content: "";
   display: block;
-  background-image: url(../images/antenna.jpg);
+  background-image: url(../images/antenna.webp);
   background-repeat: no-repeat;
   background-position: center;  
   margin-bottom: 30px;
@@ -154,7 +154,7 @@ body {
   background: #f5f4fa;
   content: "";
   display: block;
-  background-image: url(../images/clock.jpg);
+  background-image: url(../images/clock.webp);
   background-repeat: no-repeat;
   background-position: center;  
   margin-bottom: 30px;
@@ -167,7 +167,7 @@ body {
   background: #f5f4fa;
   content: "";
   display: block;
-  background-image: url(../images/diagram.jpg);
+  background-image: url(../images/diagram.webp);
   background-repeat: no-repeat;
   background-position: center;  
   margin-bottom: 30px;
@@ -180,7 +180,7 @@ body {
   background: #f5f4fa;
   content: "";
   display: block;
-  background-image: url(../images/astronaut.jpg);
+  background-image: url(../images/astronaut.webp);
   background-repeat: no-repeat;
   background-position: center;  
   margin-bottom: 30px;
