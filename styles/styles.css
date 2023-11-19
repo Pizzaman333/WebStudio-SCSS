@@ -99,6 +99,7 @@ body {
   cursor: pointer;
 }
 
+
 .offer {
   max-width: 1600px;
   background-image: url(../images/offer-bg.webp), linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40));
