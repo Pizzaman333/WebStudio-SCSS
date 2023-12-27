@@ -82,6 +82,7 @@ body {
   display: flex;
   gap: 10px;
   padding-top: 8px;
+  flex-direction: row-reverse;
 }
 
 .header-infoitem:hover .header-icon {
@@ -114,6 +115,7 @@ body {
 
 .header-link:focus {
   color: var(--highlight-color);
+  outline: none;
 }
 
 .header-info {
@@ -123,9 +125,13 @@ body {
   letter-spacing: 0.28px;
 }
 
-.header-info:hover {
+.header-info:focus {
   color: var(--highlight-color);
-  cursor: pointer;
+  outline: none;
+}
+
+.header-info:focus-within ~ .header-icon {
+  fill: var(--highlight-color);
 }
 
 .offer {
@@ -250,12 +256,12 @@ body {
 
 .features-wrap {
   width: 270px;
-height: 120px;
-background-color: rgba(245, 244, 250, 1);
-border-radius: 4px;
-text-align: center;
-padding-top: 25px;
-margin-bottom: 30px;
+  height: 120px;
+  background-color: rgba(245, 244, 250, 1);
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 25px;
+  margin-bottom: 30px;
 }
 
 .features-icon {
@@ -339,6 +345,9 @@ margin-bottom: 30px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .soc-item:hover {
@@ -346,14 +355,27 @@ margin-bottom: 30px;
   cursor: pointer;
 }
 
-.soc-item:hover .soc-icon {
-  fill: var(--white-color);
+.soc-item:focus-within {
+  background-color: var(--highlight-color);
+  outline: none;
+}
+
+.soc-item:focus-within .soc-icon {
+  fill: var(--white-color); 
+}
+
+.soc-item:focus {
+  outline: none;
+}
+
+.soc-link {
+  width: 20px;
+  height: 20px;
 }
 
 .soc-icon {
   width: 20px;
   height: 20px;
-  margin: 12px;
   fill: rgba(175, 177, 184, 1);
 }
 
@@ -378,12 +400,19 @@ margin-bottom: 30px;
 
 .clients-item {
   border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+
+.company-link {
+  display: block;
+  border-radius: 4px;
   border: 1px solid #afb1b8;
   width: 170px;
   height: 92px;
 }
 
-.clients-item:hover {
+.company-link:hover {
   border: 1px solid var(--highlight-color);
 }
 
@@ -395,6 +424,19 @@ margin-bottom: 30px;
 
 .company-logo:hover {
   fill: var(--highlight-color);
+}
+
+.company-link:focus{
+  border: 1px solid var(--highlight-color);
+}
+
+.company-link:focus .company-logo{
+  fill: var(--highlight-color);
+  outline: none;
+}
+
+.company-link:focus{
+  outline: none;
 }
 
 .footer-address {
@@ -426,6 +468,16 @@ margin-bottom: 30px;
   line-height: 171.429%;
   letter-spacing: 0.42px;
 }
+
+.footer-info:hover {
+  color: var(--highlight-color);
+}
+
+.footer-info:focus {
+  color: var(--highlight-color);
+  outline: none;
+}
+
 
 .footer-title {
   color: var(--white-color);
