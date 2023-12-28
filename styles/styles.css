@@ -355,6 +355,10 @@ body {
   cursor: pointer;
 }
 
+.soc-item:hover .soc-icon {
+  fill: var(--white-color); 
+}
+
 .soc-item:focus-within {
   background-color: var(--highlight-color);
   outline: none;
@@ -537,6 +541,15 @@ body {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+
+.filters-button:focus {
+  background: var(--highlight-color);
+  color: var(--white-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
 }
 
 .projects {
