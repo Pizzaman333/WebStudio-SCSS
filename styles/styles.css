@@ -840,6 +840,9 @@ transition: opacity;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -851,6 +854,9 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
 /* z-index: 4; */
 position: relative;
 padding: 40px;
+transition: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-circle {
@@ -1035,4 +1041,7 @@ left: 12px;
 .is-hidden {
   opacity: 0;
   z-index: -1;
+  transition: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
