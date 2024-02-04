@@ -855,8 +855,8 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
 position: relative;
 padding: 40px;
 transition: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-circle {
@@ -1040,8 +1040,42 @@ left: 12px;
 
 .is-hidden {
   opacity: 0;
-  z-index: -1;
-  transition: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.scroll-to-top {
+  width: 94px;
+  height: 94px;
+  background: rgb(245, 244, 250);
+  border: solid var(--text-color) 1px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 2;
+  transition: box-shadow, background-color, border;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-to-top:hover {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+  0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  background-color: var(--highlight-color);
+  border: none;
+}
+
+.scroll-to-top:hover .modal-close{
+  fill: var(--white-color);
+}
+
+.modal-close {
+  transform: rotate(90deg);
+  transition: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
