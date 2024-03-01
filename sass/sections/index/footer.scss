@@ -1,0 +1,147 @@
+
+.footer-logo1 {
+    color: var(--highlight-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+  }
+  
+  .footer-logo2 {
+    color: var(--white-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+  }
+  
+  
+  
+  
+  
+  .footer-address {
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 171.429%;
+    letter-spacing: 0.42px;
+    font-style: normal;
+    margin-bottom: 9px;
+    margin-top: 20px;
+  }
+  
+  .footer-list {
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
+  }
+  
+  .footer {
+    padding: 60px 0;
+    background-color: var(--background-color);
+  }
+  
+  .footer-info {
+    color: var(--lightwhite-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 171.429%;
+    letter-spacing: 0.42px;
+    transition: color var(--st-animation);
+  }
+  
+  .footer-info:hover {
+    color: var(--highlight-color);
+  }
+  
+  .footer-info:focus {
+    color: var(--highlight-color);
+    outline: none;
+  }
+  
+  
+  .footer-title {
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .footer-wrap {
+    display: flex;
+    gap: 93px;
+  }
+  
+  .soc-item {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer-soc-icon {
+    fill: var(--white-color);
+    transition: fill var(--st-animation);
+  }
+  
+  .footer-subscribe {
+    padding-top: 12px;
+  }
+  
+  .footer-input {
+    width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: rgba(33, 150, 243, 0.00);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px 16px;
+  color: var(--white-color);
+  transition: border-color var(--st-animation);
+  }
+  
+  .footer-input:hover {
+    border-color: var(--highlight-color);
+  }
+  
+  .footer-input:focus {
+    border-color: var(--highlight-color);
+    outline: none;
+  }
+  
+  .footer-input::placeholder {
+    color: rgba(255, 255, 255, 0.60);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 125%; 
+  letter-spacing: 0.48px;
+  }
+  
+  .footer-btn {
+    color: var(--white-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 187.5%;
+  letter-spacing: 0.96px;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background: var(--highlight-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 28px;
+  }
+  
+  .footer-btn:hover {
+    cursor: pointer;
+  }
+  
+  .footer-form {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .subscribe-icon {
+    fill: var(--white-color);
+  }

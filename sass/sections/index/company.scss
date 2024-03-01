@@ -1,0 +1,37 @@
+
+.company-link {
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    width: 170px;
+    height: 92px;
+    transition: border var(--st-animation);
+  }
+  
+  .company-link:hover {
+    border: 1px solid var(--highlight-color);
+  }
+  
+  .company-logo {
+    width: 170px;
+    height: 92px;
+    fill: rgba(175, 177, 184, 1);
+    transition: fill var(--st-animation);
+  }
+  
+  .company-logo:hover {
+    fill: var(--highlight-color);
+  }
+  
+  .company-link:focus{
+    border: 1px solid var(--highlight-color);
+  }
+  
+  .company-link:focus .company-logo{
+    fill: var(--highlight-color);
+    outline: none;
+  }
+  
+  .company-link:focus{
+    outline: none;
+  }
