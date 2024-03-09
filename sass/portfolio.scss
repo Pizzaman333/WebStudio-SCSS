@@ -3,7 +3,16 @@
 @import "./base/container.scss";
 @import "./base/common";
 @import "./components/header";
+<<<<<<< HEAD
 @import "./components/footer";
 @import "./components/scroll-to-top.scss";
 @import "./sections/portfolio/filters";
 @import "./sections/portfolio/projects";
+=======
+@import "./components/scroll-to-top";
+@import "./components/socials";
+@import "./sections/index/team";
+@import "./sections/portfolio/filters";
+@import "./sections/portfolio/projects";
+@import "./components/footer";
+>>>>>>> d06dcf3a99a1c91173fbfd1a0f826c67639079e8

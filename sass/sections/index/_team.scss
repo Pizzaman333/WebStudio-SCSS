@@ -61,14 +61,13 @@
 .team {
     padding: 94px 0;
     background-color: rgba(245, 244, 250, 1);
-  }
-  
-  .team-list {
+
+  &__list {
     display: flex;
     gap: 30px;
   }
   
-  .team-title {
+  &__title {
     color: var(--text-color);
     font-weight: 700;
     letter-spacing: 1.08px;
@@ -77,11 +76,11 @@
     font-size: 36px;
   }
   
-  .team-wrap {
+  &__wrap {
     padding: 16px 0;
   }
   
-  .teammate {
+  &__mate {
     color: var(--text-color);
     text-align: center;
     font-size: 16px;
@@ -89,7 +88,7 @@
     letter-spacing: 0.48px;
   }
   
-  .team-item {
+  &__item {
     background-color: var(--white-color);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -97,7 +96,13 @@
     padding-bottom: 30px;
   }
   
+<<<<<<< HEAD
   .team-subtitle {
+=======
+  &__subtitle {
+    color: var(--secondary-color);
+    text-align: center;
+>>>>>>> d06dcf3a99a1c91173fbfd1a0f826c67639079e8
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;
@@ -105,13 +110,17 @@
     color: var(--secondary-color);
     text-align: center;
   }
+}
   
-  .soc-list {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-  }
+
+
+
+
+
+
+
   
+<<<<<<< HEAD
   .soc-item {
     width: 44px;
     display: flex;
@@ -122,3 +131,7 @@
     border-radius: 50%;
   }
   
+=======
+  
+  
+>>>>>>> d06dcf3a99a1c91173fbfd1a0f826c67639079e8

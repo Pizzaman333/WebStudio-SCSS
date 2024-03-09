@@ -1,9 +1,51 @@
+<<<<<<< HEAD
 .service-bg {
   position: absolute;
+=======
+.service {
+  padding-bottom: 94px;
+
+  &__list {
+  display: flex;
+  gap: 30px;
+}
+
+&__title {
+  color: $text-color;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+
+&__subtitle {
+  color: $white-color;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+&__image {
+  width: 370px;
+  height: 294px;
+}
+
+&__item {
+  position: relative;
+}
+
+&__bg {
+  position: absolute;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 370px;
+>>>>>>> d06dcf3a99a1c91173fbfd1a0f826c67639079e8
   height: 70px;
   bottom: 0;
   left: 0;
   padding: 27px 107px;
+<<<<<<< HEAD
   background-color: rgba(47, 48, 58, 0.8);
   width: 370px;
 }
@@ -52,3 +94,17 @@
 .service-item {
   position: relative;
 }
+=======
+}
+
+&__item:nth-child(2) &__bg {
+  padding: 27px 111px;
+}
+
+&__item:nth-child(3) &__bg {
+  padding: 27px 93px;
+}
+
+}
+
+>>>>>>> d06dcf3a99a1c91173fbfd1a0f826c67639079e8
