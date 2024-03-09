@@ -2,6 +2,29 @@
   padding: 60px 0;
   background-color: $background-color;
 
+
+  
+  &__info {
+    color: $lightwhite-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 171.429%;
+    letter-spacing: 0.42px;
+    transition: color $st-animation;
+    &:hover {
+    color: $highlight-color;
+  }
+
+   &:focus {
+    color: $highlight-color;
+    outline: none;
+  }
+  }
+  
+  
+  
+ 
+  
   &__soc__icon {
     fill: $white-color;
     transition: fill $st-animation;
@@ -40,28 +63,6 @@
     flex-direction: column;
   }
   
-  
-  
-  &__info {
-    color: $lightwhite-color;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 171.429%;
-    letter-spacing: 0.42px;
-    transition: color $st-animation;
-    &:hover {
-    color: $highlight-color;
-  }
-
-   &:focus {
-    color: $highlight-color;
-    outline: none;
-  }
-  }
-  
-  
-  
- 
   
   
   &__title {
