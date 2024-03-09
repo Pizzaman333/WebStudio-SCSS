@@ -1,4 +1,63 @@
 
+.soc-item:hover {
+  background-color: var(--highlight-color);
+}
+
+.soc-item:hover .soc-icon {
+  fill: var(--white-color); 
+}
+
+.soc-item:focus-within {
+  background-color: var(--highlight-color);
+  outline: none;
+}
+
+.soc-item:focus-within .soc-icon {
+  fill: var(--white-color); 
+}
+
+.soc-item:focus {
+  outline: none;
+}
+
+.soc-link {
+  width: 20px;
+  height: 20px;
+}
+
+.soc-icon {
+  width: 20px;
+  height: 20px;
+  fill: rgba(175, 177, 184, 1);
+  transition: fill var(--st-animation);
+}
+
+.clients {
+  padding: 94px 0;
+}
+
+.clients-title {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  margin-bottom: 50px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.clients-item {
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+}
+
+
 .team {
     padding: 94px 0;
     background-color: rgba(245, 244, 250, 1);
@@ -11,11 +70,11 @@
   
   .team-title {
     color: var(--text-color);
-    text-align: center;
-    font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
   }
   
   .team-wrap {
@@ -39,12 +98,12 @@
   }
   
   .team-subtitle {
-    color: var(--secondary-color);
-    text-align: center;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;
     margin-top: 10px;
+    color: var(--secondary-color);
+    text-align: center;
   }
   
   .soc-list {
@@ -55,69 +114,11 @@
   
   .soc-item {
     width: 44px;
-    height: 44px;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: background-color var(--st-animation);
-  }
-  
-  .soc-item:hover {
-    background-color: var(--highlight-color);
-  }
-  
-  .soc-item:hover .soc-icon {
-    fill: var(--white-color); 
-  }
-  
-  .soc-item:focus-within {
-    background-color: var(--highlight-color);
-    outline: none;
-  }
-  
-  .soc-item:focus-within .soc-icon {
-    fill: var(--white-color); 
-  }
-  
-  .soc-item:focus {
-    outline: none;
-  }
-  
-  .soc-link {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .soc-icon {
-    width: 20px;
-    height: 20px;
-    fill: rgba(175, 177, 184, 1);
-    transition: fill var(--st-animation);
-  }
-  
-  .clients {
-    padding: 94px 0;
-  }
-  
-  .clients-title {
-    color: var(--text-color);
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
-  }
-  
-  .clients-list {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-  }
-  
-  .clients-item {
-    border-radius: 4px;
-    width: 170px;
-    height: 92px;
+    height: 44px;
+    border-radius: 50%;
   }
   

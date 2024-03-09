@@ -1,11 +1,20 @@
 
 .company-link {
     display: block;
-    border-radius: 4px;
     border: 1px solid #afb1b8;
     width: 170px;
     height: 92px;
     transition: border var(--st-animation);
+    border-radius: 4px;
+  }
+
+  .company-logo:hover {
+    fill: var(--highlight-color);
+  }
+  
+  
+  .company-link:focus{
+    outline: none;
   }
   
   .company-link:hover {
@@ -13,14 +22,10 @@
   }
   
   .company-logo {
-    width: 170px;
-    height: 92px;
     fill: rgba(175, 177, 184, 1);
     transition: fill var(--st-animation);
-  }
-  
-  .company-logo:hover {
-    fill: var(--highlight-color);
+    width: 170px;
+    height: 92px;
   }
   
   .company-link:focus{
@@ -29,9 +34,5 @@
   
   .company-link:focus .company-logo{
     fill: var(--highlight-color);
-    outline: none;
-  }
-  
-  .company-link:focus{
     outline: none;
   }

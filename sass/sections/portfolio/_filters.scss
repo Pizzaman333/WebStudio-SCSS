@@ -1,4 +1,21 @@
 
+.filters-button:hover {
+  background: var(--highlight-color);
+  color: var(--white-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.filters-button:focus {
+  background: var(--highlight-color);
+  color: var(--white-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+}
+
 .filters-list {
     display: flex;
     justify-content: center;
@@ -7,7 +24,7 @@
   
   .filters {
     border-top: solid rgba(236, 236, 236, 1) 1px;
-    padding-top: 94px;
+    padding-top: 95px;
     padding-bottom: 50px;
   }
   
@@ -49,89 +66,88 @@
   
   @keyframes filters-move-1 {
     0% {
-      transform: translate(-1000px, -300px) rotate(720deg);
+      opacity: 0;
+      transform: translate(-1100px, -400px) rotate(720deg);
       
     }
     50% {
-      transform: translate(-400px, 30px);
+      transform: translate(-500px, 40px);
       background: var(--highlight-color);
       color: var(--white-color);
+      opacity: 0.5;
     }
     100% {
       transform: translate(0);
+      opacity: 1;
   
     }
   }
   
   @keyframes filters-move-2 {
     0% {
-      transform: translate(100px, -500px) rotate(360deg);
+      transform: translate(200px, -600px) rotate(720deg);
+      opacity: 0;
     }
     50% {
-      transform: translate(100px, -120px) rotate(180deg);
+      transform: translate(300px, -420px) rotate(360deg);
       background: var(--highlight-color);
       color: var(--white-color);
+      opacity: 0.5;
     }
     100% {
       transform: translate(0);
+      opacity: 1;
     }
   }
   
   @keyframes filters-move-3 {
     0% {
-      transform: translate(1500px, 500px) rotate(1080deg);
+      opacity: 0;
+      transform: translate(1600px, 600px) rotate(1080deg);
     }
     50% {
-      transform: translate(500px, -60px) rotate(450deg);
+      transform: translate(600px, -50px) rotate(450deg);
       background: var(--highlight-color);
+      opacity: 0.5;
       color: var(--white-color);
     }
     100% {
       transform: translate(0);
+      opacity: 1;
     }
   }
   
   @keyframes filters-move-4 {
     0% {
-      transform: translate(-1500px, 0);
+      transform: translate(-1700px, 0);
+      opacity: 0;
     }
     50% {
-      transform: translate(-200px, 0);
+      transform: translate(-400px, 0);
       background: var(--highlight-color);
       color: var(--white-color);
+      opacity: 0.5;
     }
     100% {
       transform: translate(0);
+      opacity: 1;
     }
   }
   
   @keyframes filters-move-5 {
     0% {
-      transform: translate(1500px, 0) rotate(450deg);
+      transform: translate(1600px, 0) rotate(550deg);
+      opacity: 0;
     }
     50% {
-      transform: translate(200px, 0) rotate(90deg);
+      transform: translate(400px, 0) rotate(190deg);
       background: var(--highlight-color);
+      opacity: 0.5;
       color: var(--white-color);
     }
     100% {
       transform: translate(0);
+      opacity: 1;
     }
   }
   
-  .filters-button:hover {
-    background: var(--highlight-color);
-    color: var(--white-color);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-  }
-  
-  .filters-button:focus {
-    background: var(--highlight-color);
-    color: var(--white-color);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    outline: none;
-  }
