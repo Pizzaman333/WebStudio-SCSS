@@ -1,2 +1,11 @@
+@import "./components/variables.scss";
+@import "./components/reset.scss";
+@import "./base/container.scss";
+@import "./base/common";
+@import "./components/header";
+@import "./components/scroll-to-top";
+@import "./components/socials";
+@import "./sections/index/team";
 @import "./sections/portfolio/filters";
 @import "./sections/portfolio/projects";
+@import "./components/footer";

@@ -12,20 +12,10 @@
     animation-name: offer-bg;
     animation-duration: 2.5s;
     overflow: hidden;
-  }
-  
-  @keyframes offer-bg {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  .offer-title {
+
+    &__title {
     max-width: 696px;
-    color: var(--white-color);
+    color: $white-color;
     font-size: 44px;
     font-weight: 900;
     line-height: 136.364%;
@@ -38,22 +28,13 @@
     animation-duration: 1.6s;
   }
   
-  @keyframes offer-move {
-    0% {
-      transform: translate(1100px, -350px);
-      opacity: 0;
-    }
-    100% {
-      transform: translate(0);
-      opacity: 1;
-    }
-  }
+ 
   
-  .offer-button {
+  &__button {
     border-radius: 4px;
-    background: var(--highlight-color);
+    background: $highlight-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--white-color);
+    color: $white-color;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -67,6 +48,27 @@
     cursor: pointer;
     animation-name: offer-button-move;
     animation-duration: 1.6s;
+  }
+  }
+  
+  @keyframes offer-bg {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes offer-move {
+    0% {
+      transform: translate(1100px, -350px);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0);
+      opacity: 1;
+    }
   }
   
   @keyframes offer-button-move {
