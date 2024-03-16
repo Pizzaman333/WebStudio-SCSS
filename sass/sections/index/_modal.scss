@@ -141,8 +141,6 @@
 
   &__wrap {
     @include flexbox;
-    justify-content: center;
-    align-items: center;
     gap: 7px;
   }
 
