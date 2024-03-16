@@ -1,19 +1,18 @@
-
 .offer {
-    max-width: 1600px;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/offer-bg.webp);
-    margin-left: auto;
-    margin-right: auto;
-    padding: 200px 0;
-    animation-name: offer-bg;
-    animation-duration: 2.5s;
-    overflow: hidden;
+  max-width: 1600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/offer-bg.webp);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 0;
+  animation-name: offer-bg;
+  animation-duration: 2.5s;
+  overflow: hidden;
 
-    &__title {
+  &__title {
     max-width: 696px;
     color: $white-color;
     font-size: 44px;
@@ -27,9 +26,7 @@
     animation-name: offer-move;
     animation-duration: 1.6s;
   }
-  
- 
-  
+
   &__button {
     border-radius: 4px;
     background: $highlight-color;
@@ -49,35 +46,35 @@
     animation-name: offer-button-move;
     animation-duration: 1.6s;
   }
+}
+
+@keyframes offer-bg {
+  0% {
+    opacity: 0;
   }
-  
-  @keyframes offer-bg {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
-  
-  @keyframes offer-move {
-    0% {
-      transform: translate(1100px, -350px);
-      opacity: 0;
-    }
-    100% {
-      transform: translate(0);
-      opacity: 1;
-    }
+}
+
+@keyframes offer-move {
+  0% {
+    transform: translate(1100px, -350px);
+    opacity: 0;
   }
-  
-  @keyframes offer-button-move {
-    0% {
-      transform: translate(-1100px, -350px);
-      opacity: 0;
-    }
-    100% {
-      transform: translate(0);
-      opacity: 1;
-    }
+  100% {
+    transform: translate(0);
+    opacity: 1;
   }
+}
+
+@keyframes offer-button-move {
+  0% {
+    transform: translate(-1100px, -350px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}

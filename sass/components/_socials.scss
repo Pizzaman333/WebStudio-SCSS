@@ -1,50 +1,47 @@
 .soc__list {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-  }
-  
-  .soc__item {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color $st-animation;
-    background-color: rgba(255, 255, 255, 0.1);
-    cursor: pointer;
-  }
-  
-  .soc__item:hover {
-    background-color: $highlight-color;
-  }
-  
-  .soc__item:hover .soc__icon {
-    fill: $white-color; 
-  }
-  
-  .soc__item:focus-within {
-    background-color: $highlight-color;
-    outline: none;
-  }
-  
-  .soc__item:focus-within .soc__icon {
-    fill: $white-color; 
-  }
-  
-  .soc__item:focus {
-    outline: none;
-  }
-  
-  .soc__link {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .soc__icon {
-    width: 20px;
-    height: 20px;
-    fill: rgba(175, 177, 184, 1);
-    transition: fill $st-animation;
-  }
+  @include flexbox;
+  gap: 10px;
+}
+
+.soc__item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  @include flexbox;
+  transition: background-color $st-animation;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.soc__item:hover {
+  background-color: $highlight-color;
+}
+
+.soc__item:hover .soc__icon {
+  fill: $white-color;
+}
+
+.soc__item:focus-within {
+  background-color: $highlight-color;
+  outline: none;
+}
+
+.soc__item:focus-within .soc__icon {
+  fill: $white-color;
+}
+
+.soc__item:focus {
+  outline: none;
+}
+
+.soc__link {
+  width: 20px;
+  height: 20px;
+}
+
+.soc__icon {
+  width: 20px;
+  height: 20px;
+  fill: rgba(175, 177, 184, 1);
+  transition: fill $st-animation;
+}

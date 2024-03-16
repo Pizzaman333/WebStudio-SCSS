@@ -1,60 +1,53 @@
 .scrolltop {
-    width: 94px;
-    height: 94px;
-    background: rgb(245, 244, 250);
-    border: solid 1px $text-color;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    z-index: 2;
-    transition: box-shadow, background-color, border, $st-animation;
+  width: 94px;
+  height: 94px;
+  background: rgb(245, 244, 250);
+  border: solid 1px $text-color;
+  border-radius: 50%;
+  @include flexbox;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 2;
+  transition: box-shadow, background-color, border, $st-animation;
   animation-name: scroll-to-top-move;
   animation-duration: 1s;
 
-  
   &:hover {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
     background-color: $highlight-color;
     border: none;
   }
-  
 
-  
   &:focus {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
     background-color: $highlight-color;
     border: none;
     outline: none;
   }
-  
-  &:focus-visible .modal-close{
+
+  &:focus-visible .modal-close {
     fill: $white-color;
   }
-  
-  }
+}
 
-  .scrolltop:hover .scrolltop__icon {
-    fill: $white-color;
-  }
+.scrolltop:hover .scrolltop__icon {
+  fill: $white-color;
+}
 
-  .scrolltop__icon {
-    transform: rotate(90deg);
-    transition: fill var(--st-animation);
+.scrolltop__icon {
+  transform: rotate(90deg);
+  transition: fill var(--st-animation);
+}
+
+@keyframes scroll-to-top-move {
+  0% {
+    bottom: -85px;
+    background-color: $highlight-color;
   }
-  
-  @keyframes scroll-to-top-move {
-    0% {
-      bottom: -85px;
-      background-color: $highlight-color;
-    }
-    100% {
-      bottom: 25px;
-    }
+  100% {
+    bottom: 25px;
   }
-  
+}

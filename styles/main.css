@@ -45,6 +45,8 @@ body {
 }
 .header__wrap {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header__logo1 {
   color: rgb(33, 150, 243);
@@ -61,18 +63,23 @@ body {
   letter-spacing: 0.78px;
 }
 .header__list {
-  margin-left: 93px;
   display: flex;
-  gap: 50px;
   align-items: center;
+  justify-content: center;
+  margin-left: 93px;
+  gap: 50px;
 }
 .header__infolist {
   margin-left: auto;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 .header__infoitem {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   padding-top: 8px;
   flex-direction: row-reverse;
@@ -169,8 +176,8 @@ body {
   border: solid 1px rgb(33, 33, 33);
   border-radius: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   position: fixed;
   bottom: 25px;
   right: 25px;
@@ -214,8 +221,9 @@ body {
 }
 .soc__list {
   display: flex;
-  gap: 10px;
+  align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 .soc__item {
@@ -223,8 +231,8 @@ body {
   height: 44px;
   border-radius: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
@@ -391,6 +399,8 @@ body {
 }
 .features__list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 .features__title {
@@ -427,6 +437,8 @@ body {
 }
 .service__list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 .service__title {
@@ -474,6 +486,8 @@ body {
 }
 .team__list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 .team__title {
@@ -522,8 +536,9 @@ body {
 }
 .clients__list {
   display: flex;
-  gap: 30px;
+  align-items: center;
   justify-content: center;
+  gap: 30px;
 }
 .clients__item {
   border-radius: 4px;
@@ -567,8 +582,8 @@ body {
   top: 0;
   right: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -593,8 +608,8 @@ body {
   border-radius: 50%;
   border: solid 1px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -687,12 +702,16 @@ body {
 }
 .modal__list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 10px;
   margin-bottom: 20px;
 }
 .modal__wrap {
   display: flex;
+  align-items: center;
+  justify-content: center;
   justify-content: center;
   align-items: center;
   gap: 7px;
@@ -785,6 +804,8 @@ body {
 }
 .footer__list {
   display: flex;
+  align-items: none;
+  justify-content: center;
   gap: 9px;
   flex-direction: column;
 }
@@ -813,6 +834,8 @@ body {
 }
 .footer__wrap {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 93px;
 }
 .footer__subscribe {
@@ -863,6 +886,8 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   padding: 10px 28px;
 }
@@ -871,6 +896,8 @@ body {
 }
 .footer__form {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 12px;
 }
 .footer__subscribe__icon {

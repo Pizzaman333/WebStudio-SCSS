@@ -1,13 +1,12 @@
-
 .team {
-    padding: 94px 0;
-    background-color: rgba(245, 244, 250, 1);
+  padding: 94px 0;
+  background-color: rgba(245, 244, 250, 1);
 
   &__list {
-    display: flex;
+    @include flexbox;
     gap: 30px;
   }
-  
+
   &__title {
     color: var(--text-color);
     text-align: center;
@@ -16,11 +15,11 @@
     letter-spacing: 1.08px;
     margin-bottom: 50px;
   }
-  
+
   &__wrap {
     padding: 16px 0;
   }
-  
+
   &__mate {
     color: var(--text-color);
     text-align: center;
@@ -28,7 +27,7 @@
     font-weight: 500;
     letter-spacing: 0.48px;
   }
-  
+
   &__item {
     background-color: var(--white-color);
     border-radius: 0px 0px 4px 4px;
@@ -36,7 +35,7 @@
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     padding-bottom: 30px;
   }
-  
+
   &__subtitle {
     color: var(--secondary-color);
     text-align: center;
@@ -46,14 +45,3 @@
     margin-top: 10px;
   }
 }
-  
-
-
-
-
-
-
-
-  
-  
-  

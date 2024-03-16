@@ -1,18 +1,17 @@
-
 .projects {
-    padding-bottom: 94px;
+  padding-bottom: 94px;
 
-    &__wrap {
+  &__wrap {
     padding: 20px 24px;
     border: 1px solid #eee;
   }
-  
+
   &__list {
-    display: flex;
+    @include flexbox;
     flex-wrap: wrap;
     gap: 30px;
   }
-  
+
   &__subtitle {
     color: $text-color;
     font-size: 18px;
@@ -25,30 +24,29 @@
     width: 370px;
     height: 294px;
   }
-  
+
   &__article {
     transition: box-shadow $st-animation;
   }
-  
+
   &__link:hover &__article {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
       0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   }
-  
+
   &__link:focus {
     outline: none;
   }
-  
+
   &__link:focus &__article {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
       0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-      
   }
-  
+
   &__item {
     flex-basis: calc((100% - 60px) \3);
   }
-  
+
   &__description {
     color: $secondary-color;
     font-size: 16px;
@@ -56,43 +54,39 @@
     line-height: 187.5%;
     letter-spacing: 0.48px;
   }
-  
+
   &__texthover {
     color: $white-color;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 155.556%;
-  letter-spacing: 0.54px;
-  max-width: 322px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 155.556%;
+    letter-spacing: 0.54px;
+    max-width: 322px;
   }
-  
+
   &__hover-position {
     position: relative;
     overflow: hidden;
   }
-  
+
   &__hover {
     top: 294px;
     left: 0;
     position: absolute;
     width: 370px;
-  height: 294px;
-  background: rgba(33, 150, 243, 0.90);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* opacity: 0; */
-  transition: transform $st-animation;
+    height: 294px;
+    background: rgba(33, 150, 243, 0.9);
+    @include flexbox;
+    /* opacity: 0; */
+    transition: transform $st-animation;
   }
-  
+
   &__link:hover &__hover {
     /* opacity: 1; */
     transform: translate(0, -294px);
   }
-  
+
   &__link:focus &__hover {
     opacity: 1;
   }
-  }
-  
-  
+}

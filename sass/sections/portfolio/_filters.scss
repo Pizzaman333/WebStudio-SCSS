@@ -1,36 +1,33 @@
 .filters {
-    border-top: solid rgba(236, 236, 236, 1) 1px;
-    padding-top: 94px;
-    padding-bottom: 50px;
+  border-top: solid rgba(236, 236, 236, 1) 1px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 
-    &__list {
-    display: flex;
-    justify-content: center;
+  &__list {
+    @include flexbox;
     gap: 8px;
   }
-  
-  
-  
+
   &__item:nth-child(1) &__button {
     animation-name: filters-move-1;
   }
-  
+
   &__item:nth-child(2) &__button {
     animation-name: filters-move-2;
   }
-  
+
   &__item:nth-child(3) &__button {
     animation-name: filters-move-3;
   }
-  
+
   &__item:nth-child(4) &__button {
     animation-name: filters-move-4;
   }
-  
+
   &__item:nth-child(5) &__button {
     animation-name: filters-move-5;
   }
-  
+
   &__button {
     padding: 6px 22px;
     border-radius: 4px;
@@ -54,7 +51,7 @@
       0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
     cursor: pointer;
   }
-  
+
   &__button:focus {
     background: $highlight-color;
     color: $white-color;
@@ -63,79 +60,74 @@
     cursor: pointer;
     outline: none;
   }
-  }
+}
 
+@keyframes filters-move-1 {
+  0% {
+    transform: translate(-1000px, -300px) rotate(720deg);
+  }
+  50% {
+    transform: translate(-400px, 30px);
+    background: $highlight-color;
+    color: $white-color;
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 
-  
-  @keyframes filters-move-1 {
-    0% {
-      transform: translate(-1000px, -300px) rotate(720deg);
-      
-    }
-    50% {
-      transform: translate(-400px, 30px);
-      background: $highlight-color;
-      color: $white-color;
-    }
-    100% {
-      transform: translate(0);
-  
-    }
+@keyframes filters-move-2 {
+  0% {
+    transform: translate(100px, -500px) rotate(360deg);
   }
-  
-  @keyframes filters-move-2 {
-    0% {
-      transform: translate(100px, -500px) rotate(360deg);
-    }
-    50% {
-      transform: translate(100px, -120px) rotate(180deg);
-      background: $highlight-color;
-      color: $white-color;
-    }
-    100% {
-      transform: translate(0);
-    }
+  50% {
+    transform: translate(100px, -120px) rotate(180deg);
+    background: $highlight-color;
+    color: $white-color;
   }
-  
-  @keyframes filters-move-3 {
-    0% {
-      transform: translate(1500px, 500px) rotate(1080deg);
-    }
-    50% {
-      transform: translate(500px, -60px) rotate(450deg);
-      background: $highlight-color;
-      color: $white-color;
-    }
-    100% {
-      transform: translate(0);
-    }
+  100% {
+    transform: translate(0);
   }
-  
-  @keyframes filters-move-4 {
-    0% {
-      transform: translate(-1500px, 0);
-    }
-    50% {
-      transform: translate(-200px, 0);
-      background: $highlight-color;
-      color: $white-color;
-    }
-    100% {
-      transform: translate(0);
-    }
+}
+
+@keyframes filters-move-3 {
+  0% {
+    transform: translate(1500px, 500px) rotate(1080deg);
   }
-  
-  @keyframes filters-move-5 {
-    0% {
-      transform: translate(1500px, 0) rotate(450deg);
-    }
-    50% {
-      transform: translate(200px, 0) rotate(90deg);
-      background: $highlight-color;
-      color: $white-color;
-    }
-    100% {
-      transform: translate(0);
-    }
+  50% {
+    transform: translate(500px, -60px) rotate(450deg);
+    background: $highlight-color;
+    color: $white-color;
   }
-  
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes filters-move-4 {
+  0% {
+    transform: translate(-1500px, 0);
+  }
+  50% {
+    transform: translate(-200px, 0);
+    background: $highlight-color;
+    color: $white-color;
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes filters-move-5 {
+  0% {
+    transform: translate(1500px, 0) rotate(450deg);
+  }
+  50% {
+    transform: translate(200px, 0) rotate(90deg);
+    background: $highlight-color;
+    color: $white-color;
+  }
+  100% {
+    transform: translate(0);
+  }
+}

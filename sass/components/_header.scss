@@ -1,80 +1,71 @@
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    animation-name: header-move;
-    animation-duration: 1s;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  animation-name: header-move;
+  animation-duration: 1s;
 
-    &__wrap {
-      display: flex;
-    }
-    
-    &__logo1 {
-      color: $highlight-color;
-      font-family: $logo-font;
-      font-size: 26px;
-      font-weight: 700;
-      letter-spacing: 0.78px;
-    }
-    
-    &__logo2 {
-      color: $black-color;
-      font-family: $logo-font;
-      font-size: 26px;
-      font-weight: 700;
-      letter-spacing: 0.78px;
-    }
-    
-    &__list {
-      margin-left: 93px;
-      display: flex;
-      gap: 50px;
-      align-items: center;
-    }
-    
-    &__infolist {
-      margin-left: auto;
-      display: flex;
-      gap: 30px;
-    }
-    
-    &__infoitem {
-      display: flex;
-      gap: 10px;
-      padding-top: 8px;
-      flex-direction: row-reverse;
-      transition: fill $st-animation;
-    }
-    
-    &__infoitem:hover &__icon {
-      fill: $highlight-color;
-      cursor: pointer;
-    }
-    
-    &__infoitem:hover &__info {
-      fill: $highlight-color;
-      color: $highlight-color;
-      cursor: pointer;
-    }
-    
-    &__icon {
-      width: 16px;
-      height: 16px;
-      fill: rgba(117, 117, 117, 1);
-      transition: fill $st-animation;
-    }
-    
-    &__link {
-      color: $text-color;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 0.28px;
-      position: relative;
-      transition: color $st-animation;
+  &__wrap {
+    @include flexbox;
+  }
 
-      &:hover {
+  &__logo1 {
+    @include logo($color: $highlight-color);
+  }
+
+  &__logo2 {
+    @include logo($color: $black-color);
+  }
+
+  &__list {
+    @include flexbox;
+    margin-left: 93px;
+    gap: 50px;
+  }
+
+  &__infolist {
+    margin-left: auto;
+    @include flexbox;
+    gap: 30px;
+  }
+
+  &__infoitem {
+    @include flexbox;
+    gap: 10px;
+    padding-top: 8px;
+    flex-direction: row-reverse;
+    transition: fill $st-animation;
+  }
+
+  &__infoitem:hover &__icon {
+    fill: $highlight-color;
+    cursor: pointer;
+  }
+
+  &__infoitem:hover &__info {
+    fill: $highlight-color;
+    color: $highlight-color;
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    fill: rgba(117, 117, 117, 1);
+    transition: fill $st-animation;
+  }
+
+  &__link {
+    color: $text-color;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    position: relative;
+    transition: color $st-animation;
+
+    &:hover {
       color: $highlight-color;
     }
-    
+
     &:focus {
       color: $highlight-color;
       outline: none;
@@ -93,7 +84,7 @@
       opacity: 0;
       transition: opacity $st-animation;
     }
-    
+
     &:hover::after {
       opacity: 1;
     }
@@ -101,53 +92,47 @@
     &:focus::after {
       opacity: 1;
     }
-    }
-    
-    
-    
-    
-    
-    .index:hover &__item:nth-child(1) &__link::after {
-      opacity: 1;
-    }
-    
-    .index:hover &__item:nth-child(1) &__link {
-      color: $highlight-color;
-    }
-    
-    .portfolio:hover &__item:nth-child(2) &__link::after {
-      opacity: 1;
-    }
-    
-    .portfolio:hover &__item:nth-child(2) &__link {
-      color: $highlight-color;
-    }
-    
-    &__info {
-      color: $secondary-color;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 0.28px;
-      transition: color $st-animation;
-    }
-    
-    &__info:focus {
-      color: $highlight-color;
-      outline: none;
-    }
-    
-    &__info:focus-within ~ &__icon {
-      fill: $highlight-color;
-    }
   }
-  
-  @keyframes header-move {
-    0% {
-      transform: translate(0, -200px);
-    }
-    100% {
-      transform: translate(0);
-    }
+
+  .index:hover &__item:nth-child(1) &__link::after {
+    opacity: 1;
   }
-  
-  
+
+  .index:hover &__item:nth-child(1) &__link {
+    color: $highlight-color;
+  }
+
+  .portfolio:hover &__item:nth-child(2) &__link::after {
+    opacity: 1;
+  }
+
+  .portfolio:hover &__item:nth-child(2) &__link {
+    color: $highlight-color;
+  }
+
+  &__info {
+    color: $secondary-color;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    transition: color $st-animation;
+  }
+
+  &__info:focus {
+    color: $highlight-color;
+    outline: none;
+  }
+
+  &__info:focus-within ~ &__icon {
+    fill: $highlight-color;
+  }
+}
+
+@keyframes header-move {
+  0% {
+    transform: translate(0, -200px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
