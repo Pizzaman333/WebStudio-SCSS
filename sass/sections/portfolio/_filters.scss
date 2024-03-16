@@ -68,8 +68,7 @@
   }
   50% {
     transform: translate(-400px, 30px);
-    background: $highlight-color;
-    color: $white-color;
+    @include filters_animation;
   }
   100% {
     transform: translate(0);
@@ -82,8 +81,7 @@
   }
   50% {
     transform: translate(100px, -120px) rotate(180deg);
-    background: $highlight-color;
-    color: $white-color;
+    @include filters_animation;
   }
   100% {
     transform: translate(0);
@@ -96,8 +94,7 @@
   }
   50% {
     transform: translate(500px, -60px) rotate(450deg);
-    background: $highlight-color;
-    color: $white-color;
+    @include filters_animation;
   }
   100% {
     transform: translate(0);
@@ -110,8 +107,7 @@
   }
   50% {
     transform: translate(-200px, 0);
-    background: $highlight-color;
-    color: $white-color;
+    @include filters_animation;
   }
   100% {
     transform: translate(0);
@@ -124,8 +120,7 @@
   }
   50% {
     transform: translate(200px, 0) rotate(90deg);
-    background: $highlight-color;
-    color: $white-color;
+    @include filters_animation;
   }
   100% {
     transform: translate(0);
