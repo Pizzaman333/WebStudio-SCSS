@@ -2,9 +2,13 @@
   padding: 60px 0;
   background-color: $background-color;
 
-  &__soc__icon {
+  &__icon {
     fill: $white-color;
     transition: fill $st-animation;
+  }
+
+  &__soc {
+    padding-top: 12px;
   }
 
   &__logo1 {
@@ -17,7 +21,7 @@
 
   &__address {
     color: $white-color;
-    @extend small_text;
+    @extend small_text !optional;
     line-height: 171.429%;
     letter-spacing: 0.42px;
     font-style: normal;
@@ -26,14 +30,14 @@
   }
 
   &__list {
-    @include flexbox($align: none);
+    @include flexbox($align: none, $justify: none);
     gap: 9px;
     flex-direction: column;
   }
 
   &__info {
     color: $lightwhite-color;
-    @extend small_text;
+    @extend small_text !optional;
     line-height: 171.429%;
     letter-spacing: 0.42px;
     transition: color $st-animation;
@@ -49,14 +53,14 @@
 
   &__title {
     color: $white-color;
-    @extend smallbold_text;
+    @extend smallbold_text !optional;
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
   }
 
   &__wrap {
-    @include flexbox;
+    @include flexbox($align: none, $justify: none);
     gap: 93px;
   }
 
@@ -104,8 +108,7 @@
     border-radius: 4px;
     background: $highlight-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    @include flexbox;
-    align-items: center;
+    @include flexbox($justify: none);
     gap: 10px;
     padding: 10px 28px;
   }

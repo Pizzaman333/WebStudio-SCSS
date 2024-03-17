@@ -39,7 +39,7 @@
 
 .scrolltop__icon {
   transform: rotate(90deg);
-  transition: fill var(--st-animation);
+  transition: fill $st-animation;
 }
 
 @keyframes scroll-to-top-move {

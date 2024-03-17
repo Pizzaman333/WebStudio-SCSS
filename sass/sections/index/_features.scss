@@ -54,21 +54,21 @@
   padding: 94px 0;
 
   &__list {
-    @include flexbox;
+    @include flexbox($align: none, $justify: none);
     gap: 30px;
   }
 
   &__title {
     margin-bottom: 10px;
-    color: var(--text-color);
-    @extend smallbold_text;
+    color: $text-color;
+    @extend smallbold_text !optional;
     letter-spacing: 0.42px;
     text-transform: uppercase;
   }
 
   &__text {
-    color: var(--secondary-color);
-    @extend small_text;
+    color: $secondary-color;
+    @extend small_text !optional;
     line-height: 171.429%;
     letter-spacing: 0.42px;
   }
