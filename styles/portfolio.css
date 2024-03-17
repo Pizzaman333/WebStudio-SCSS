@@ -1,3 +1,13 @@
+.footer__info, .footer__address {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer__title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
 a {
   text-decoration: none;
 }

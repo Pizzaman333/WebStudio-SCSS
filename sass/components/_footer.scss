@@ -21,7 +21,7 @@
 
   &__address {
     color: $white-color;
-    @extend small_text !optional;
+    @extend %small_text;
     line-height: 171.429%;
     letter-spacing: 0.42px;
     font-style: normal;
@@ -37,7 +37,7 @@
 
   &__info {
     color: $lightwhite-color;
-    @extend small_text !optional;
+    @extend %small_text;
     line-height: 171.429%;
     letter-spacing: 0.42px;
     transition: color $st-animation;
@@ -53,7 +53,7 @@
 
   &__title {
     color: $white-color;
-    @extend smallbold_text !optional;
+    @extend %smallbold_text;
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;

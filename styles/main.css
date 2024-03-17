@@ -1,3 +1,13 @@
+.footer__info, .footer__address, .modal__link, .modal__text, .features__text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer__title, .service__subtitle, .features__title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
 a {
   text-decoration: none;
 }

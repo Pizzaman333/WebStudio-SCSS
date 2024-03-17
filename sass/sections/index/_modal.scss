@@ -146,14 +146,14 @@
 
   &__text {
     color: $secondary-color;
-    @extend small_text !optional;
+    @extend %small_text;
     line-height: 171.429%;
     letter-spacing: 0.42px;
   }
 
   &__link {
     color: $highlight-color;
-    @extend small_text !optional;
+    @extend %small_text;
     line-height: 24px;
     letter-spacing: 0.42px;
     text-decoration-line: underline;

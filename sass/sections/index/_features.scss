@@ -61,14 +61,14 @@
   &__title {
     margin-bottom: 10px;
     color: $text-color;
-    @extend smallbold_text !optional;
+    @extend %smallbold_text;
     letter-spacing: 0.42px;
     text-transform: uppercase;
   }
 
   &__text {
     color: $secondary-color;
-    @extend small_text !optional;
+    @extend %small_text;
     line-height: 171.429%;
     letter-spacing: 0.42px;
   }
