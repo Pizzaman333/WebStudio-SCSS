@@ -1,11 +1,40 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 10px 0;
   animation-name: header-move;
   animation-duration: 1s;
 
+  @media  screen and (min-width: 768px) {
+    padding: 21px 0;
+   }
+
+   @media  screen and (min-width: 1600px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+   }
+
+  &__menu {
+    width: 40px;
+    height: 40px;
+
+    @media  screen and (min-width: 768px) {
+      display: none;
+     }
+  
+     @media  screen and (min-width: 1600px) {
+      display: none;
+     }
+  }
+
   &__wrap {
-    @include flexbox;
+    @include flexbox($justify: space-between);
+
+    // @media  screen and (min-width: 768px) {
+    //   @include flexbox($justify: center);
+    //  }
+  
+     @media  screen and (min-width: 1600px) {
+      @include flexbox($justify: center);
+     }
   }
 
   &__logo1 {
@@ -13,27 +42,50 @@
   }
 
   &__logo2 {
-    @include logo($color: $black-color);
+    @include logo($color: $text-color);
   }
 
   &__list {
-    @include flexbox;
+    display: none;
+
+    @media  screen and (min-width: 768px) {
+      @include flexbox;
+      margin-left: 88px;
+      gap: 50px;
+    }
+    
+    @media  screen and (min-width: 1600px) {
+      @include flexbox;
     margin-left: 93px;
-    gap: 50px;
+     }
   }
 
   &__infolist {
-    margin-left: auto;
+    display: none;
+
+    @media  screen and (min-width: 768px) {
+      @include flexbox($justify: flex-start);
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-left: 96px;
+    }
+
+    @media  screen and (min-width: 1600px) {
     @include flexbox;
     gap: 30px;
+    margin-left: auto;
+     }
   }
 
   &__infoitem {
     @include flexbox;
     gap: 10px;
-    padding-top: 8px;
     flex-direction: row-reverse;
     transition: fill $st-animation;
+
+    @media  screen and (min-width: 1600px) {
+       padding-top: 8px;
+     }
   }
 
   &__infoitem:hover &__icon {
@@ -48,10 +100,15 @@
   }
 
   &__icon {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     fill: rgba(117, 117, 117, 1);
     transition: fill $st-animation;
+
+    @media  screen and (min-width: 1600px) {
+      width: 16px;
+    height: 16px;
+    }
   }
 
   &__link {
@@ -112,10 +169,18 @@
 
   &__info {
     color: $secondary-color;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    letter-spacing: 0.28px;
+    letter-spacing: 0.24px;
     transition: color $st-animation;
+
+    @media  screen and (min-width: 768px) {
+    }
+
+    @media  screen and (min-width: 1600px) {
+      font-size: 14px;
+ letter-spacing: 0.28px;
+     }
   }
 
   &__info:focus {
