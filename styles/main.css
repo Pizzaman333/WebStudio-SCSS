@@ -177,11 +177,6 @@ body {
   flex-direction: row-reverse;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1600px) {
-  .header__infoitem {
-    padding-top: 8px;
-  }
-}
 .header__infoitem:hover .header__icon {
   fill: rgb(33, 150, 243);
   cursor: pointer;
@@ -381,28 +376,51 @@ body {
 }
 
 .offer {
-  max-width: 1600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/offer-bg.webp);
+  max-width: 480px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/offerbg-mb.webp);
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
+  padding: 118px 0;
   animation-name: offer-bg;
   animation-duration: 2.5s;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .offer {
+    max-width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/offerbg-tb.webp);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .offer {
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/offerbg-ds.webp);
+    padding: 200px 0;
+  }
 }
 .offer__title {
-  max-width: 696px;
+  max-width: 360px;
   color: rgb(255, 255, 255);
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 136.364%;
-  letter-spacing: 2.64px;
+  line-height: 161.538%;
+  letter-spacing: 1.56px;
   text-transform: uppercase;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   animation-name: offer-move;
   animation-duration: 1.6s;
+}
+@media screen and (min-width: 1600px) {
+  .offer__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 136.364%;
+    letter-spacing: 2.64px;
+  }
 }
 .offer__button {
   border-radius: 4px;
@@ -415,13 +433,18 @@ body {
   line-height: 187.5%;
   letter-spacing: 0.96px;
   margin-top: 30px;
-  padding: 10px 32px;
+  padding: 10px 24px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
   animation-name: offer-button-move;
   animation-duration: 1.6s;
+}
+@media screen and (min-width: 1600px) {
+  .offer__button {
+    padding: 10px 32px;
+  }
 }
 
 @keyframes offer-bg {
@@ -504,13 +527,38 @@ body {
   margin-bottom: 30px;
 } */
 .features {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1600px) {
+  .features {
+    padding: 94px 0;
+  }
+}
+.features__article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .features__list {
   display: flex;
-  align-items: none;
-  justify-content: none;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .features__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .features__list {
+    display: flex;
+    align-items: none;
+    justify-content: none;
+  }
 }
 .features__title {
   margin-bottom: 10px;
@@ -523,8 +571,18 @@ body {
   line-height: 171.429%;
   letter-spacing: 0.42px;
 }
+@media screen and (min-width: 768px) {
+  .features__text {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .features__text {
+    max-width: 270px;
+  }
+}
 .features__wrap {
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: rgb(245, 244, 250);
   border-radius: 4px;
@@ -532,13 +590,29 @@ body {
   padding-top: 25px;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .features__wrap {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .features__wrap {
+    width: 270px;
+  }
+}
 .features__icon {
   width: 70px;
   height: 70px;
 }
 
 .service {
+  display: none;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 1600px) {
+  .service {
+    display: block;
+  }
 }
 .service__list {
   display: flex;
@@ -584,14 +658,25 @@ body {
 }
 
 .team {
-  padding: 94px 0;
+  padding: 60px 0;
   background-color: rgb(245, 244, 250);
+}
+@media screen and (min-width: 1600px) {
+  .team {
+    padding: 94px 0;
+  }
 }
 .team__list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
+  flex-direction: column;
+}
+@media screen and (min-width: 1600px) {
+  .team__list {
+    flex-direction: row;
+  }
 }
 .team__title {
   color: #212121;

@@ -1,10 +1,23 @@
 .team {
-  padding: 94px 0;
+  padding: 60px 0;
   background-color: rgba(245, 244, 250, 1);
+
+  @media  screen and (min-width: 1600px) {
+    padding: 94px 0;
+
+   }
 
   &__list {
     @include flexbox;
     gap: 30px;
+    flex-direction: column;
+
+    @media  screen and (min-width: 768px) {
+     }
+  
+     @media  screen and (min-width: 1600px) {
+      flex-direction: row;
+     }
   }
 
   &__title {

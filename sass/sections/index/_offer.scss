@@ -1,30 +1,59 @@
 .offer {
-  max-width: 1600px;
+  max-width: 480px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/offer-bg.webp);
+    url(../images/offerbg-mb.webp);
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
+  padding: 118px 0;
   animation-name: offer-bg;
   animation-duration: 2.5s;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media  screen and (min-width: 768px) {
+    max-width: 768px;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/offerbg-tb.webp);
+   }
+
+   @media  screen and (min-width: 1600px) {
+    max-width: 1600px;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/offerbg-ds.webp);
+    padding: 200px 0;
+   }
 
   &__title {
-    max-width: 696px;
+    max-width: 360px;
     color: $white-color;
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
-    line-height: 136.364%;
-    letter-spacing: 2.64px;
+    line-height: 161.538% ;
+    letter-spacing: 1.56px;
+
     text-transform: uppercase;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     animation-name: offer-move;
     animation-duration: 1.6s;
+  
+     @media  screen and (min-width: 1600px) {
+    max-width: 696px;
+      font-size: 44px;
+    line-height: 136.364%;
+    letter-spacing: 2.64px;
+     }
   }
 
   &__button {
@@ -38,13 +67,17 @@
     line-height: 187.5%;
     letter-spacing: 0.96px;
     margin-top: 30px;
-    padding: 10px 32px;
+    padding: 10px 24px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
     animation-name: offer-button-move;
     animation-duration: 1.6s;
+
+    @media  screen and (min-width: 1600px) {
+      padding: 10px 32px;
+       }
   }
 }
 

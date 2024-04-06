@@ -177,11 +177,6 @@ body {
   flex-direction: row-reverse;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1600px) {
-  .header__infoitem {
-    padding-top: 8px;
-  }
-}
 .header__infoitem:hover .header__icon {
   fill: rgb(33, 150, 243);
   cursor: pointer;
@@ -381,14 +376,25 @@ body {
 }
 
 .team {
-  padding: 94px 0;
+  padding: 60px 0;
   background-color: rgb(245, 244, 250);
+}
+@media screen and (min-width: 1600px) {
+  .team {
+    padding: 94px 0;
+  }
 }
 .team__list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
+  flex-direction: column;
+}
+@media screen and (min-width: 1600px) {
+  .team__list {
+    flex-direction: row;
+  }
 }
 .team__title {
   color: #212121;
