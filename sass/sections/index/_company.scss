@@ -1,5 +1,9 @@
 .clients {
-  padding: 94px 0;
+  padding: 60px 0;
+
+   @media  screen and (min-width: 1200px) {
+    padding: 94px 0;
+   }
 
   &__title {
     color: $text-color;
@@ -7,36 +11,72 @@
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media  screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+     }
   }
 
   &__list {
     @include flexbox;
+    flex-wrap: wrap;
     gap: 30px;
+max-width: 450px;
+margin: 0 auto;
+
+    @media  screen and (min-width: 768px) {
+max-width: 738px;
+     }
+  
+     @media  screen and (min-width: 1200px) {
+      max-width: none;
+     }
   }
 
   &__item {
     border-radius: 4px;
-    width: 170px;
+    width: 210px;
     height: 92px;
+    transition: border $st-animation;
+    border-radius: 4px;
+   border: 1px solid #afb1b8;
+@include flexbox();
+
+   &:hover {
+     border: 1px solid $highlight-color;
+   }
+
+   &:focus {
+     border: 1px solid $highlight-color;
+     outline: none;
+   }
+    @media  screen and (min-width: 768px) {
+width: 226px;
+    }
+ 
+    @media  screen and (min-width: 1200px) {
+      width: 170px;
+    }
   }
 
   &__link {
     display: block;
-    border-radius: 4px;
-    border: 1px solid #afb1b8;
-    width: 170px;
-    height: 92px;
-    transition: border $st-animation;
+   
+    // width: 170px;
+    // height: 92px;
+    // transition: border $st-animation;
+    //  border-radius: 4px;
+    // border: 1px solid #afb1b8;
 
-    &:hover {
-      border: 1px solid $highlight-color;
-    }
+    // &:hover {
+    //   border: 1px solid $highlight-color;
+    // }
 
-    &:focus {
-      border: 1px solid $highlight-color;
-      outline: none;
-    }
+    // &:focus {
+    //   border: 1px solid $highlight-color;
+    //   outline: none;
+    // }
   }
 
   &__logo {

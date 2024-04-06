@@ -23,7 +23,7 @@
     url(../images/offerbg-tb.webp);
    }
 
-   @media  screen and (min-width: 1600px) {
+   @media  screen and (min-width: 1200px) {
     max-width: 1600px;
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -48,7 +48,7 @@
     animation-name: offer-move;
     animation-duration: 1.6s;
   
-     @media  screen and (min-width: 1600px) {
+     @media  screen and (min-width: 1200px) {
     max-width: 696px;
       font-size: 44px;
     line-height: 136.364%;
@@ -75,7 +75,7 @@
     animation-name: offer-button-move;
     animation-duration: 1.6s;
 
-    @media  screen and (min-width: 1600px) {
+    @media  screen and (min-width: 1200px) {
       padding: 10px 32px;
        }
   }

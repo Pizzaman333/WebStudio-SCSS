@@ -55,7 +55,7 @@
 
    
 
-  @media  screen and (min-width: 1600px) {
+  @media  screen and (min-width: 1200px) {
     padding: 94px 0;
   }
 
@@ -74,7 +74,7 @@
       flex-direction: row;
      }
   
-     @media  screen and (min-width: 1600px) {
+     @media  screen and (min-width: 1200px) {
       @include flexbox($align: none, $justify: none);
      }
   }
@@ -97,7 +97,7 @@
       max-width: 354px;
      }
   
-     @media  screen and (min-width: 1600px) {
+     @media  screen and (min-width: 1200px) {
       max-width: 270px;
      }
   }
@@ -115,7 +115,7 @@
       width: 354px;
      }
   
-     @media  screen and (min-width: 1600px) {
+     @media  screen and (min-width: 1200px) {
       width: 270px;
      }
   }
