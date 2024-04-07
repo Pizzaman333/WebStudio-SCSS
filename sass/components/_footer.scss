@@ -1,6 +1,7 @@
 .footer {
   padding: 60px 0;
   background-color: $background-color;
+overflow: hidden;
 
   &__icon {
     fill: $white-color;
@@ -8,7 +9,15 @@
   }
 
   &__soc {
-    padding-top: 12px;
+    
+    @media  screen and (min-width: 768px) {
+      padding-top: 5px;
+     }
+  
+     @media  screen and (min-width: 1200px) {
+      padding-top: 12px;
+      margin-left: 70px;
+     }
   }
 
   &__logo1 {
@@ -17,6 +26,21 @@
 
   &__logo2 {
     @include logo;
+  }
+
+  &__contcts {
+    @include flexbox();
+    flex-direction: column;
+
+    @media  screen and (min-width: 768px) {
+      margin-left: 61px;
+      margin-right: 165px;
+     }
+  
+     @media  screen and (min-width: 1200px) {
+      display: block;
+      margin: 0;
+     }
   }
 
   &__address {
@@ -41,6 +65,7 @@
     line-height: 171.429%;
     letter-spacing: 0.42px;
     transition: color $st-animation;
+
     &:hover {
       color: $highlight-color;
     }
@@ -52,24 +77,48 @@
   }
 
   &__title {
+    text-align: center;
     color: $white-color;
     @extend %smallbold_text;
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    @media  screen and (min-width: 1200px) {
+text-align: left;
+     }
   }
 
   &__wrap {
     @include flexbox($align: none, $justify: none);
-    gap: 93px;
+    gap: 60px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    @media  screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 0;
+     }
+  
+     
   }
 
   &__subscribe {
-    padding-top: 12px;
+    @media  screen and (min-width: 768px) {
+      margin-top: 60px;
+      margin-right: auto;
+      margin-left: auto;
+     }
+  
+     @media  screen and (min-width: 1200px) {
+      padding-top: 12px;
+      margin: 0 0 0 93px;
+     }
+    
   }
 
   &__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -78,6 +127,10 @@
     padding: 15px 16px;
     color: $white-color;
     transition: border-color $st-animation;
+
+    @media  screen and (min-width: 1200px) {
+      width: 358px;
+     }
   }
 
   &__input:hover {
@@ -119,7 +172,13 @@
 
   &__form {
     @include flexbox;
-    gap: 12px;
+    gap: 20px;
+    flex-direction: column;
+  
+     @media  screen and (min-width: 1200px) {
+      gap: 12px;
+      flex-direction: row;
+     }
   }
 
   &__subscribe__icon {

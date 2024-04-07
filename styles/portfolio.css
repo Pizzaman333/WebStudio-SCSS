@@ -668,13 +668,22 @@ main {
 .footer {
   padding: 60px 0;
   background-color: rgb(47, 48, 58);
+  overflow: hidden;
 }
 .footer__icon {
   fill: rgb(255, 255, 255);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer__soc {
-  padding-top: 12px;
+@media screen and (min-width: 768px) {
+  .footer__soc {
+    padding-top: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__soc {
+    padding-top: 12px;
+    margin-left: 70px;
+  }
 }
 .footer__logo1 {
   color: rgb(33, 150, 243);
@@ -700,6 +709,24 @@ main {
   .footer__logo2 {
     font-size: 26px;
     letter-spacing: 0.78px;
+  }
+}
+.footer__contcts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer__contcts {
+    margin-left: 61px;
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__contcts {
+    display: block;
+    margin: 0;
   }
 }
 .footer__address {
@@ -731,22 +758,46 @@ main {
   outline: none;
 }
 .footer__title {
+  text-align: center;
   color: rgb(255, 255, 255);
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    text-align: left;
+  }
+}
 .footer__wrap {
   display: flex;
   align-items: none;
   justify-content: none;
-  gap: 93px;
+  gap: 60px;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-.footer__subscribe {
-  padding-top: 12px;
+@media screen and (min-width: 768px) {
+  .footer__wrap {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__subscribe {
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__subscribe {
+    padding-top: 12px;
+    margin: 0 0 0 93px;
+  }
 }
 .footer__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -755,6 +806,11 @@ main {
   padding: 15px 16px;
   color: rgb(255, 255, 255);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
+  }
 }
 .footer__input:hover {
   border-color: rgb(33, 150, 243);
@@ -801,7 +857,14 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 20px;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    gap: 12px;
+    flex-direction: row;
+  }
 }
 .footer__subscribe__icon {
   fill: rgb(255, 255, 255);
