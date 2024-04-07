@@ -6,8 +6,18 @@
     border: 1px solid #eee;
   }
 
+  &__item:first-child &__wrap {
+    @media  screen and (min-width: 768px) {
+      padding-bottom: 54px;
+     }
+
+     @media  screen and (min-width: 1200px) {
+     padding-bottom: 20px;
+     }
+  }
+
   &__list {
-    @include flexbox;
+    @include flexbox($justify: none);
     flex-wrap: wrap;
     gap: 30px;
   }
@@ -20,10 +30,27 @@
     letter-spacing: 1.08px;
     margin-bottom: 4px;
   }
-  &__img {
-    width: 370px;
+
+  &__photo {
     height: 294px;
+    width: 450px;
+    
+    
+    
+    @media  screen and (min-width: 768px) {
+      width: 354px;
+      height: 281px;
+     }
+  
+     @media  screen and (min-width: 1200px) {
+      width: 370px;
+     }
   }
+
+  // &__img {
+  //   width: 370px;
+  //   height: 294px;
+  // }
 
   &__article {
     transition: box-shadow $st-animation;
@@ -44,7 +71,24 @@
   }
 
   &__item {
+
+    // flex-basis: calc((100% - 60px) \1);
+    // min-width: 450px;
+
+    @media  screen and (min-width: 768px) {
+
+      // min-width: 354px;
+      // flex-basis: calc((100% - 60px) \2);
+      max-width: 354px;
+
+     }
+  
+     @media  screen and (min-width: 1200px) {
+      max-width: none;
     flex-basis: calc((100% - 60px) \3);
+
+      // min-width: none;
+     }
   }
 
   &__description {
@@ -61,7 +105,14 @@
     font-weight: 400;
     line-height: 155.556%;
     letter-spacing: 0.54px;
-    max-width: 322px;
+    max-width: 402px;
+    @media  screen and (min-width: 768px) {
+      max-width: 306px;
+     }
+
+     @media  screen and (min-width: 1200px) {
+      max-width: 322px;
+     }
   }
 
   &__hover-position {
@@ -73,12 +124,17 @@
     top: 294px;
     left: 0;
     position: absolute;
-    width: 370px;
+   
     height: 294px;
+    width: 450px;
     background: rgba(33, 150, 243, 0.9);
     @include flexbox;
     /* opacity: 0; */
     transition: transform $st-animation;
+
+    @media  screen and (min-width: 768px) {
+ width: 370px;
+     }
   }
 
   &__link:hover &__hover {
