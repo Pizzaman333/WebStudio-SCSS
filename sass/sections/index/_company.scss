@@ -39,17 +39,20 @@ max-width: 738px;
 
   &__item {
     border-radius: 4px;
-    width: 210px;
+    // width: 210px;
     height: 92px;
     transition: border $st-animation;
     border-radius: 4px;
    border: 1px solid #afb1b8;
+   flex-basis: calc((100% - 30px) / 2);
 
-@media  screen and (max-width: 480px) {
-  max-width: 210px;
-  flex-basis: calc((100% - 30px) \2);
+@media  screen and (min-width: 768px) {
+  flex-basis: calc((100% - 60px) / 3);
 }
-// flex-basis: calc((100% - 60px) \3);
+
+@media  screen and (min-width: 1200px) {
+  flex-basis: calc((100% - 150px) / 6);
+    }
 
    &:hover {
      border: 1px solid $highlight-color;
@@ -59,13 +62,7 @@ max-width: 738px;
      border: 1px solid $highlight-color;
      outline: none;
    }
-    @media  screen and (min-width: 768px) {
-width: 226px;
-    }
- 
-    @media  screen and (min-width: 1200px) {
-      width: 170px;
-    }
+    
   }
 
   &__link {
