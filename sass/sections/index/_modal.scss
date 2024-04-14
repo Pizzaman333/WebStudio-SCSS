@@ -7,6 +7,7 @@
   right: 0;
   @include flexbox;
   transition: opacity $st-animation;
+  z-index: 3;
 }
 
 .modal {
