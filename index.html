@@ -18,18 +18,20 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles/main.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="index">
-    <header class="header" id="header" >
+    <header class="header" id="header">
       <div class="container">
         <div class="header__wrap">
           <a href="./index.html" class="header__logo1"
             >Web<span class="header__logo2">Studio</span></a
           >
-          <svg class="header__menu">
-            <use href="./images/icons.svg#icon-menu"></use>
-          </svg>
+          <button class="header__button" data-menu-open>
+            <svg class="header__menu">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
           <ul class="header__list">
             <li class="header__item">
               <a href="./index.html" class="header__link">Студія</a>
@@ -66,7 +68,9 @@
       <section class="offer">
         <div class="container">
           <h1 class="offer__title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="offer__button" type="button" data-modal-open>Замовити послугу</button>
+          <button class="offer__button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="features">
@@ -145,7 +149,7 @@
                 <h3 class="service__subtitle">Десктопні додатки</h3>
               </div>
             </li>
-            <li class="service__item"data-aos="zoom-out">
+            <li class="service__item" data-aos="zoom-out">
               <img class="service__image" src="./images/box2.webp" alt="img" />
               <div class="service__bg">
                 <h3 class="service__subtitle">Мобільні додатки</h3>
@@ -162,11 +166,17 @@
       </section>
       <section class="team">
         <div class="container">
-          <h2 class="team__title" data-aos="fade-down" data-aos-duration="1000">Наша команда</h2>
+          <h2 class="team__title" data-aos="fade-down" data-aos-duration="1000">
+            Наша команда
+          </h2>
           <ul class="team__list">
-            <li class="team__item" data-aos="fade-up-right" data-aos-duration="1300">
+            <li
+              class="team__item"
+              data-aos="fade-up-right"
+              data-aos-duration="1300"
+            >
               <div class="team__photo">
-                 <img class="team__img" src="./images/human1.webp" alt="human" />
+                <img class="team__img" src="./images/human1.webp" alt="human" />
               </div>
               <div class="team__wrap">
                 <h3 class="team__mate">Ігор Дем'яненко</h3>
@@ -219,9 +229,13 @@
                 </li>
               </ul>
             </li>
-            <li class="team__item" data-aos="fade-down-right" data-aos-duration="1300">
+            <li
+              class="team__item"
+              data-aos="fade-down-right"
+              data-aos-duration="1300"
+            >
               <div class="team__photo">
-              <img class="team__img" src="./images/human2.webp" alt="human" />
+                <img class="team__img" src="./images/human2.webp" alt="human" />
               </div>
               <div class="team__wrap">
                 <h3 class="team__mate">Ольга Рєпіна</h3>
@@ -274,9 +288,13 @@
                 </li>
               </ul>
             </li>
-            <li class="team__item" data-aos="fade-down-left" data-aos-duration="1300">
+            <li
+              class="team__item"
+              data-aos="fade-down-left"
+              data-aos-duration="1300"
+            >
               <div class="team__photo">
-              <img class="team__img" src="./images/human3.webp" alt="human" />
+                <img class="team__img" src="./images/human3.webp" alt="human" />
               </div>
               <div class="team__wrap">
                 <h3 class="team__mate">Микола Тарасов</h3>
@@ -329,9 +347,13 @@
                 </li>
               </ul>
             </li>
-            <li class="team__item" data-aos="fade-up-left" data-aos-duration="1300">
+            <li
+              class="team__item"
+              data-aos="fade-up-left"
+              data-aos-duration="1300"
+            >
               <div class="team__photo">
-              <img class="team__img" src="./images/human4.webp" alt="human" />
+                <img class="team__img" src="./images/human4.webp" alt="human" />
               </div>
               <div class="team__wrap">
                 <h3 class="team__mate">Михайло Єрмаков</h3>
@@ -388,23 +410,37 @@
         </div>
       </section>
       <section class="clients">
-        <h2 class="clients__title" data-aos="flip-up" data-aos-duration="1500">Постійні клієнти</h2>
+        <h2 class="clients__title" data-aos="flip-up" data-aos-duration="1500">
+          Постійні клієнти
+        </h2>
         <ul class="clients__list">
-          <li class="clients__item" data-aos="flip-right" data-aos-duration="1500">
+          <li
+            class="clients__item"
+            data-aos="flip-right"
+            data-aos-duration="1500"
+          >
             <a href="" class="clients__link">
               <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_1"></use>
               </svg>
             </a>
           </li>
-          <li class="clients__item" data-aos="flip-right" data-aos-duration="1500">
+          <li
+            class="clients__item"
+            data-aos="flip-right"
+            data-aos-duration="1500"
+          >
             <a href="" class="clients__link">
               <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_2"></use>
               </svg>
             </a>
           </li>
-          <li class="clients__item" data-aos="flip-right" data-aos-duration="1500">
+          <li
+            class="clients__item"
+            data-aos="flip-right"
+            data-aos-duration="1500"
+          >
             <a href="" class="clients__link">
               <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_3"></use>
@@ -412,21 +448,36 @@
             </a>
           </li>
           <li class="clients__item">
-            <a href="" class="clients__link" data-aos="flip-left" data-aos-duration="1500">
+            <a
+              href=""
+              class="clients__link"
+              data-aos="flip-left"
+              data-aos-duration="1500"
+            >
               <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_4"></use>
               </svg>
             </a>
           </li>
           <li class="clients__item">
-            <a href="" class="clients__link" data-aos="flip-left" data-aos-duration="1500">
+            <a
+              href=""
+              class="clients__link"
+              data-aos="flip-left"
+              data-aos-duration="1500"
+            >
               <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_5"></use>
               </svg>
             </a>
           </li>
           <li class="clients__item">
-            <a href="" class="clients__link" data-aos="flip-left" data-aos-duration="1500">
+            <a
+              href=""
+              class="clients__link"
+              data-aos="flip-left"
+              data-aos-duration="1500"
+            >
               <svg class="clients__logo">
                 <use href="./images/icons.svg#icon-company_6"></use>
               </svg>
@@ -497,8 +548,18 @@
         <div class="footer__subscribe" data-aos="fade-left">
           <h4 class="footer__title">Підпишіться на розсилку</h4>
           <form action="" class="footer__form">
-            <input type="email" class="footer__input" placeholder="E-mail" required>
-            <button class="footer__btn">Підписатися <svg class="footer__subscribe__icon" width="24px" height="24px"><use href="./images/icons.svg#icon-send"></use></svg></button>
+            <input
+              type="email"
+              class="footer__input"
+              placeholder="E-mail"
+              required
+            />
+            <button class="footer__btn">
+              Підписатися
+              <svg class="footer__subscribe__icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -563,12 +624,60 @@
         </form>
       </div>
     </div>
-    <!-- <a href="#top" class="scrolltop">
+    <a href="#top" class="scrolltop">
       <svg class="scrolltop__icon" width="21.68px" height="30.91px">
         <use href="./images/icons.svg#icon-arrow"></use>
       </svg>
-    </a> -->
+    </a>
+    <div class="menu is-hidden" data-menu>
+      <button class="menu__button" type="" data-menu-close>
+        <svg class="menu__icon">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="./index.html" class="menu__link menu__active">Студія</a>
+        </li>
+        <li class="menu__item">
+          <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+        </li>
+        <li class="menu__item">
+            <a href="#contacts" class="menu__link">Контакти</a>
+        </li>
+      </ul>
+      <div class="menu__wrap">
+        <a class="menu__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        <a class="menu__mail" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        >
+        <ul class="menu__socials">
+          <li class="menu__socitem">
+            <a href="" class="menu__soc">Instagram</a>
+          </li>
+          <li class="menu__socitem">
+            <div class="menu__rectangle"></div>
+          </li>
+          <li class="menu__socitem">
+            <a href="" class="menu__soc">Twitter</a>
+          </li>
+          <li class="menu__socitem">
+            <div class="menu__rectangle"></div>
+          </li>
+          <li class="menu__socitem">
+            <a href="" class="menu__soc">Facebook</a>
+          </li>
+          <li class="menu__socitem">
+            <div class="menu__rectangle"></div>
+          </li>
+          <li class="menu__socitem">
+            <a href="" class="menu__soc">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

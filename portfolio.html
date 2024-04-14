@@ -27,9 +27,11 @@
           <a href="./index.html" class="header__logo1"
             >Web<span class="header__logo2">Studio</span></a
           >
-          <svg class="header__menu">
-            <use href="./images/icons.svg#icon-menu"></use>
-          </svg>
+          <button class="header__button" data-menu-open>
+            <svg class="header__menu">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
           <ul class="header__list">
             <li class="header__item">
               <a href="./index.html" class="header__link">Студія</a>
@@ -408,12 +410,60 @@
         </div>
       </div>
     </footer>
-    <!-- <a href="#top" class="scrolltop">
+    <a href="#top" class="scrolltop">
       <svg class="scrolltop__icon" width="21.68px" height="30.91px">
         <use href="./images/icons.svg#icon-arrow"></use>
       </svg>
-    </a> -->
+    </a>
+    <div class="menu is-hidden" data-menu>
+      <button class="menu__button" data-menu-close>
+        <svg class="menu__icon">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="./index.html" class="menu__link">Студія</a>
+        </li>
+        <li class="menu__item">
+          <a href="./portfolio.html" class="menu__link menu__active">Портфоліо</a>
+        </li>
+        <li class="menu__item">
+          <a href="#contacts" class="menu__link" data-menu-close>Контакти</a>
+        </li>
+      </ul>
+      <div class="menu__wrap">
+        <a class="menu__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        <a class="menu__mail" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        >
+        <ul class="menu__socials">
+          <li class="menu__socitem">
+            <a href="" class="menu__soc">Instagram</a>
+          </li>
+          <li class="menu__socitem">
+            <div class="menu__rectangle"></div>
+          </li>
+          <li class="menu__socitem">
+            <a href="" class="menu__soc">Twitter</a>
+          </li>
+          <li class="menu__socitem">
+            <div class="menu__rectangle"></div>
+          </li>
+          <li class="menu__socitem">
+            <a href="" class="menu__soc">Facebook</a>
+          </li>
+          <li class="menu__socitem">
+            <div class="menu__rectangle"></div>
+          </li>
+          <li class="menu__socitem">
+            <a href="" class="menu__soc">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script>
       AOS.init();
     </script>
