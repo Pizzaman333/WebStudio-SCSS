@@ -499,7 +499,7 @@ main {
 .offer {
   margin-top: 60px;
   max-width: 480px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/desktop/desktop-offer@1x.webp);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/mobile-offer@1x.webp);
   margin-left: auto;
   margin-right: auto;
   padding: 118px 0;
@@ -507,25 +507,36 @@ main {
   animation-duration: 2.5s;
   overflow: hidden;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
+  background-size: cover;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .offer {
-    background-image: url(../../../images/desktop/desktop-offer@1x.webp);
+    background-image: url(../images/mobile/mobile-offer@2x.webp);
   }
 }
 @media screen and (min-width: 768px) {
   .offer {
     margin-top: 80px;
     max-width: 768px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/offerbg-tb.webp);
+    background-image: url(../images/tablet/tablet-offer@1x.webp);
+  }
+}
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .offer {
+    background-image: url(../images/tablet/tablet-offer@2x.webp);
   }
 }
 @media screen and (min-width: 1200px) {
   .offer {
     max-width: 1600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/offerbg-ds.webp);
     padding: 200px 0;
+    background-image: url(../images/desktop/desktop-offer@1x.webp);
+  }
+}
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .offer {
+    background-image: url(../images/desktop/desktop-offer@2x.webp);
   }
 }
 .offer__title {
