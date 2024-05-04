@@ -499,7 +499,7 @@ main {
 .offer {
   margin-top: 60px;
   max-width: 480px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/offerbg-mb.webp);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/desktop/desktop-offer@1x.webp);
   margin-left: auto;
   margin-right: auto;
   padding: 118px 0;
@@ -508,6 +508,11 @@ main {
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .offer {
+    background-image: url(../../../images/desktop/desktop-offer@1x.webp);
+  }
 }
 @media screen and (min-width: 768px) {
   .offer {
